@@ -1,0 +1,81 @@
+:root {
+  --bgColor: #02021b;
+  --blueColor: #004471;
+  --purpleColor: #7e006b;
+  --redColor: #960037;
+  --grayColor: rgb(84, 84, 84);
+  --whiteColor: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  background: url(img/secure/lock.jpg) center center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  filter: blur(10px);
+}
+.passCard {
+  background-color: rgba(240, 248, 255, 0.5);
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.passCard h1 {
+  margin: 2rem 0;
+  text-align: center;
+}
+.passCard label {
+  margin: 0.5rem 2rem;
+}
+.passCard input{
+  margin: 0 2rem;
+  background-color: transparent;
+  border: 2px solid var(--grayColor);
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.passCard input:focus{
+  outline: 0;
+}
+.passCard input::placeholder{
+  color: var(--grayColor);
+}
+.btn{
+  margin: 3rem 2rem 2rem 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--bgColor);
+  color: var(--whiteColor);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+}
+.btn:focus{
+  outline: 0;
+}
+.btn:hover{
+  transform: translateY(-10px);
+}
